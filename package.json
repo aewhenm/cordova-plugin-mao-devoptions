@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-mao-devoptions",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Cordova plugin for Android platform to work with developer options",
   "cordova": {
     "id": "cordova.plugin.mao.devoptions",
@@ -13,5 +13,9 @@
     "version": ">=4.0.0"
   }],
   "author": "mutnasao",
-  "license": "Apache 2.0"
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngnkabylbai/cordova-plugin-mao-devoptions"
+  },
 }
