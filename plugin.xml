@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://apache.org./cordova/ns/plugins/1.0"
+        xmlns="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-mao-devoptions"
+        version="3.0.0">
+
+  <name>Devoptions</name>
+
+  <description>
+    Cordova plugin for Android platform to work with developer options
+  </description>
+
+  <license>Apache 2.0</license>
+
+  <engines>
+    <engine name="cordova" version=">=4.0.0"/>
+  </engines>
+
+  <keywords>cordova, developer options, developer mode, check</keywords>
+
+  <js-module src="src/js/Devoptions.js" name="Devoptions">
+    <clobbers target="window.plugin.devoptions" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Devoptions">
+        <param name="android-package" value="cordova.mao.devoptions.Devoptions" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/Devoptions.java" target-dir="src/cordova/mao/devoptions/" />
+  </platform>
+
+
+</plugin>
